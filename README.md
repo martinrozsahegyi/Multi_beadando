@@ -385,13 +385,4 @@ A `frontend/app.py` fájlt módosítva alakíthatod a megjelenést:
 
 ---
 
-## 🎓 Készítette
 
-**Multi Paradigmás Programozási Nyelvek - Beadandó Feladat**  
-EKKE - Eger
-
----
-
-## 📄 Licenc
-
-Ez a projekt oktatási célokra készült.
