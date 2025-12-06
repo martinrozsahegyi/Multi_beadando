@@ -6,10 +6,10 @@ import threading
 def start_scheduler():
     schedule.every(1).hours.do(fetch_weather)
 
-    def run():
+    def loop():
         while True:
             schedule.run_pending()
             time.sleep(1)
 
-    thread = threading.Thread(target=run, daemon=True)
-    thread.start()
+    t = threading.Thread(target=loop, daemon=True)
+    t.start()

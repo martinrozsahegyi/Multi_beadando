@@ -2,34 +2,20 @@ import streamlit as st
 import requests
 import pandas as pd
 
-API = "http://127.0.0.1:8000/weather"
+API = "http://localhost:8000/weather"
 
-st.title("🌦 Weather Microservice Dashboard")
+st.title("Időjárás mikroszerviz")
 
-# ----------- Latest Weather -----------
-st.header("Latest Weather Data")
-
+st.header("Legfrissebb adat")
 latest = requests.get(f"{API}/latest").json()
 st.write(latest)
 
-
-# ----------- Full History -----------
-st.header("Weather History")
-
+st.header("Adattörténet")
 history = requests.get(f"{API}/history").json()
+df = pd.DataFrame(history)
+st.line_chart(df["temperature"])
+st.dataframe(df)
 
-if history:
-    df = pd.DataFrame(history)
-    st.dataframe(df)
-
-    st.subheader("Temperature Over Time")
-    st.line_chart(df["temperature"])
-else:
-    st.info("No weather data available yet. Try refreshing the backend.")
-    
-
-# ----------- Stats -----------
-st.header("Statistics")
-
+st.header("Statisztikák")
 stats = requests.get(f"{API}/stats").json()
 st.write(stats)

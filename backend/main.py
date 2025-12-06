@@ -6,7 +6,6 @@ from .services.scheduler import start_scheduler
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
-
 app.include_router(weather_router, prefix="/weather")
 
-start_scheduler()  # automated hourly updates
+start_scheduler()  # automatikus frissítés indul

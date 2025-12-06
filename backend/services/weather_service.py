@@ -14,7 +14,6 @@ def fetch_weather():
     record = Weather(city=CITY, temperature=temp, description=desc)
     db.add(record)
     db.commit()
-    db.refresh(record)
     db.close()
 
     return record
