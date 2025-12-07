@@ -1,11 +1,11 @@
-# 🌦 Időjárás Mikroszerviz – FastAPI + Streamlit
+# Időjárás Mikroszerviz – FastAPI + Streamlit
 
 Ez a projekt a **Multi Paradigmás Programozási Nyelvek** tantárgy beadandó feladatához készült.  
 A rendszer egy egyszerű, mégis mikroszerviz-szerű Python alapú alkalmazás, amely külön **backend**, **frontend**, **adatbázis** és **automatizációs** rétegekre épül.
 
 ---
 
-## 📋 Tartalomjegyzék
+## Tartalomjegyzék
 
 - [Főbb Funkciók](#-főbb-funkciók)
 - [Projekt Architektúra](#-projekt-architektúra)
@@ -20,22 +20,22 @@ A rendszer egy egyszerű, mégis mikroszerviz-szerű Python alapú alkalmazás, 
 
 ---
 
-## ✨ Főbb Funkciók
+## Főbb Funkciók
 
-- 🌍 **Időjárási adatok lekérése** az OpenWeather API-ból
-- 💾 **Adatok mentése** SQLite adatbázisba SQLAlchemy ORM használatával
-- 🔌 **REST API végpontok** FastAPI keretrendszerrel
-- 📊 **Modern, interaktív frontend** Streamlit segítségével
-- ⏰ **Automatikus háttérfolyamat**, amely óránként frissíti az időjárási adatokat
-- ✅ **Pytest egységtesztek**, köztük paraméterezett tesztek
-- ⚙️ **Környezeti változók kezelése** `.env` fájllal
-- 📈 **Statisztikák és grafikonok** a hőmérsékleti trendekről
+- **Időjárási adatok lekérése** az OpenWeather API-ból
+-  **Adatok mentése** SQLite adatbázisba SQLAlchemy ORM használatával
+-  **REST API végpontok** FastAPI keretrendszerrel
+-  **Modern, interaktív frontend** Streamlit segítségével
+- **Automatikus háttérfolyamat**, amely óránként frissíti az időjárási adatokat
+- **Pytest egységtesztek**, köztük paraméterezett tesztek
+- **Környezeti változók kezelése** `.env` fájllal
+- **Statisztikák és grafikonok** a hőmérsékleti trendekről
 
 A rendszer demonstrálja a **procedurális**, **funkcionális** és **objektumorientált** programozási paradigmák használatát.
 
 ---
 
-## 🏗 Projekt Architektúra
+## Projekt Architektúra
 
 ```
 ┌─────────────────┐
@@ -65,7 +65,7 @@ A rendszer demonstrálja a **procedurális**, **funkcionális** és **objektumor
 
 ---
 
-## 🚀 Telepítés és Indítás
+## Telepítés és Indítás
 
 ### Előfeltételek
 
@@ -136,7 +136,7 @@ streamlit run frontend/app.py
 
 ---
 
-## 📊 Használat
+## Használat
 
 ### Frontend Dashboard
 
@@ -163,7 +163,7 @@ A Streamlit alapú felhasználói felület a következő funkciókat kínálja:
 
 ---
 
-## 🔌 API Végpontok
+## API Végpontok
 
 ### Base URL: `http://localhost:8000`
 
@@ -231,7 +231,7 @@ FastAPI automatikusan generál Swagger UI dokumentációt:
 
 ---
 
-## 📁 Projekt Struktúra
+## Projekt Struktúra
 
 ```
 Multi_beadando/
@@ -298,7 +298,7 @@ Multi_beadando/
 
 ---
 
-## ✅ Tesztelés
+## Tesztelés
 
 ### Tesztek futtatása
 
@@ -326,7 +326,7 @@ pytest tests/test_api.py
 
 ---
 
-## ⚙️ Környezeti Változók
+## Környezeti Változók
 
 A `.env` fájl a következő változókat tartalmazza:
 
@@ -344,7 +344,7 @@ A `.env` fájl a következő változókat tartalmazza:
 
 ---
 
-## 💻 Fejlesztés
+## Fejlesztés
 
 ### Új API végpont hozzáadása
 
@@ -376,7 +376,7 @@ A `frontend/app.py` fájlt módosítva alakíthatod a megjelenést:
 
 ---
 
-## 📝 Megjegyzések
+## Megjegyzések
 
 - Az alkalmazás indításakor automatikusan létrejön a `weather.db` SQLite adatbázis
 - A scheduler automatikusan elindul a backend indulásakor
